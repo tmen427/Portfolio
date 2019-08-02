@@ -57,7 +57,7 @@ strong {
 :root {
   --serif-font: PlayfairDisplay;
   --mono-font:  FiraMono;
- 
+
   --main-color: #383838;    /* the color for the main body */
   --secondary-color: #092445;
   --accent-color: #E0A54B;          /* the color for the various text on the page */
@@ -131,23 +131,23 @@ header {
 }
 
 .contact-me a {
-  color: #E0A54B; 
-  font-size: 20px; 
+  color: #E0A54B;
+  font-size: 20px;
 }
 
 nav {
   padding: 25px;
-    max-width: var(--max-width); 
+    max-width: var(--max-width);
 
   height: 50px;
   margin-right: auto;
   margin-left: auto;
   display: flex;
   align-items: center;
-  
+
   background-color:  #092445;
- 
-  
+
+
 }
 
 nav div {
@@ -181,7 +181,7 @@ section.hero {
   margin: 0 auto;
   align-items: center;
   padding: 0 25px;
-  
+
 }
 
 section.hero .hero-left {
@@ -198,7 +198,7 @@ section.hero .hero-left h1 {
   color: var(--main-color);
 }
 
-section.hero .hero-left h1 i {              
+section.hero .hero-left h1 i {
   color: var(--accent-color);
 }
 
@@ -278,7 +278,7 @@ section.portfolio .row div.project .cover {
   text-align: center;
   text-decoration: none;
 
-  background-color: rgba(0, 0, 0, 0.75); 
+  background-color: rgba(0, 0, 0, 0.75);
   color: #FFF;
   transition: var(--transition);
   opacity: 0;
@@ -308,7 +308,7 @@ section.portfolio .row div.project .cover p {
 
 .project-1 { background-image: url('assets/portfolio/project2.png') }
 .project-2 { background-image: url('assets/portfolio/friend.png') }
-.project-3 { background-image: url('assets/portfolio/burger.png') }
+.project-3 { background-image: url('assets/portfolio/map.png') }
 .project-4 { background-image: url('assets/portfolio/project1.png') }
 
 
@@ -474,7 +474,7 @@ footer a {
 		font-size: 22px;
 		line-height: 28px;
 	}
-	
+
 
 
     section.services .service {
@@ -503,6 +503,6 @@ footer a {
 #projects {
     font-size: 50px;
     text-align: center;
-    margin: 20px; 
-    
+    margin: 20px;
+
 }
