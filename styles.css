@@ -506,3 +506,40 @@ footer a {
     margin: 20px;
 
 }
+
+body {
+  margin: 0; 
+  padding: 0; 
+  background: white; 
+}
+
+.box {
+transform: translate(-50%, -50%);
+top: 95%; 
+left: 50%; 
+position: absolute;
+}
+.box span {
+display: block; 
+width: 20px; 
+height:  20px; 
+border-bottom: 1px solid black; 
+border-right: 1px solid black; 
+transform: rotate(45deg); 
+margin: -10px; 
+animation: animate  infinite; 
+}
+@keyframes animate 
+{
+0% {
+opacity: 0; 
+}
+50% {
+opacity: 50; 
+}
+100% {
+opacity: 100; 
+}
+}
+
+

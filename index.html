@@ -37,6 +37,12 @@
 	
 	<h1>Hello! My name is <strong>Tony Men</strong>, a recent coding bootcamp graduate. I enjoy making websites that are  <i>meaningful</i> to users.</h1> 
 	</div>
+
+<div class = box id = box >
+        <span></span>
+		<span></span>
+	
+    </div>
 	
 
 </section>
@@ -101,7 +107,27 @@
 	</div>
 </section>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+<script>
+
+/**
+		document.getElementById('box').addEventListener('click', function ()  {
+		window.scrollBy(0,window.innerHeight); 
+		}) 
+	**/	
+	
+	$(document).ready(function() {
+   
+   $('.box').click(function(){
+	   $('html, body').animate({scrollTop:$(document).height()}, 'slow');
+	   return false;
+   });
+
+});
+
+
+		</script>
 
 
 </body>
