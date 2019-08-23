@@ -27,8 +27,11 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 body {
+
+  right: 10px;
   line-height: 1;
 }
+
 ol, ul {
   list-style: none;
 }
@@ -51,6 +54,13 @@ strong {
 	font-weight: bold;
 }
 
+.bar {
+  width: 35px;
+  height: 5px;
+  background-color: green;
+  margin: 6px 0;
+}
+
 /* *******************
 * VARIABLES
 * *******************/
@@ -59,7 +69,7 @@ strong {
   --mono-font:  FiraMono;
 
   --main-color: #383838;    /* the color for the main body */
-  --secondary-color: #092445;
+  --secondary-color: white;
   --accent-color: #E0A54B;          /* the color for the various text on the page */
   --bright-color: #ADCDF4;
 
@@ -125,35 +135,38 @@ strong {
 header {
   max-width: 100%;
   border-bottom: 1px solid rgba(56, 56, 56, 0.2);
- background-color: #092445;
+ background-color: black;
 
 
 }
 
 .contact-me a {
-  color: #E0A54B;
+  color: white;
   font-size: 20px;
+  
 }
 
 nav {
   padding: 25px;
     max-width: var(--max-width);
 
-  height: 50px;
+  height: 20px;
   margin-right: auto;
   margin-left: auto;
   display: flex;
   align-items: center;
+  z-index: static; 
 
-  background-color:  #092445;
+  background-color: black ;
 
 
 }
 
 nav div {
-  display: flex;
+  text-align: right !important ; 
   justify-content: flex-end;
-  font-family: var(--mono-font);
+
+  font-family: 'Roboto';
   color: var(--main-color);
   font-size: 14px;
   width: 100%;
@@ -167,16 +180,32 @@ nav div img {
 nav div a {
   color: var(--main-color);
   text-decoration: none;
-}
+  margin: 10px; 
+  padding: 5px 0px; 
+  
 
+
+  
+}
+.contact-me a:hover {
+  border-bottom: 3px solid white;
+
+
+}
+.contact-me a.active {
+  border-bottom: 3px solid black ;
+
+
+}
+/*
 nav > div > a:nth-child(1) {
-  margin-right: 20px;
+  margin-right: 30px;
 }
-
+(/)
 /* Main section (hero) */
 section.hero {
   display: flex;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 80px);
   max-width: var(--max-width);
   margin: 0 auto;
   align-items: center;
@@ -186,7 +215,8 @@ section.hero {
 
 section.hero .hero-left {
   width: 75%;
-  font-family: var(--serif-font);
+  /* font-family: var(--serif-font); */
+  font-family: 'Open-Sans'!important;
   font-size: 44px;
   line-height: 60px;
   font-weight: 400;
@@ -243,7 +273,7 @@ section.hero .hero-right {
 
 /* Portfolio section */
 section.portfolio {
-  padding: 75px 25px;
+  padding: 30px 25px 75px 25px;
   color: var(--main-color);
 }
 
@@ -296,7 +326,7 @@ section.portfolio .row div.project .cover h3 {
   font-size: 32px;
   margin-bottom: 10px;
   font-family: var(--serif-font);
-  font-style: italic;
+  font-style: bold;
 }
 
 section.portfolio .row div.project .cover p {
@@ -376,10 +406,11 @@ section.contact a {
 section.contact {
   padding: 25px 25px;
   font-family: var(--mono-font);
-  font-size: 14px;
+  font-size: 18px;
   line-height: 22px;
   font-weight: 400;
-  color: var(--bright-color);
+
+  color:black;
   background-color: var(--secondary-color);
   text-align: center;
 }
@@ -429,7 +460,8 @@ section.contact .card img {
 /* Footer */
 footer {
   padding: 30px 25px 15px 25px;
-  font-family: var(--mono-font);
+ 
+  
   font-size: 12px;
   line-height: 22px;
   font-weight: 400;
@@ -499,18 +531,27 @@ footer a {
 	}
 }
 
+.portfolio {
+  background-color: #435363;
+}
 
 #projects {
     font-size: 50px;
     text-align: center;
-    margin: 20px;
-
+   padding: 40px 23px 15px 23px ; 
+    background-color: #435363; 
+    margin-top: 20px; 
+    color: white !important; 
+    font-family:  serif !important; 
+   
+    
 }
 
 body {
   margin: 0; 
   padding: 0; 
-  background: white; 
+  background: #f4f6f8 ; 
+ 
 }
 
 .box {
