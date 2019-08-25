@@ -138,6 +138,7 @@ header {
  background-color: black;
 
 
+
 }
 
 .contact-me a {
@@ -205,11 +206,18 @@ nav > div > a:nth-child(1) {
 /* Main section (hero) */
 section.hero {
   display: flex;
-  height: calc(100vh - 80px);
+  height: calc(101vh - 80px);
   max-width: var(--max-width);
   margin: 0 auto;
   align-items: center;
   padding: 0 25px;
+  /**
+   background-image: url("assets/portfolio/comp.jpg");
+
+  background-repeat: no-repeat;
+  background-position: right; 
+  background-size: cover; 
+**/
 
 }
 
@@ -220,12 +228,16 @@ section.hero .hero-left {
   font-size: 44px;
   line-height: 60px;
   font-weight: 400;
-  color: var(--main-color);
+  color: var(--main-color); 
+  
+
   padding-right: 25px;
 }
 
 section.hero .hero-left h1 {
-  color: var(--main-color);
+  /*color: var(--main-color);*/
+  color: white!important; 
+  z-index: 99;
 }
 
 section.hero .hero-left h1 i {
@@ -295,6 +307,10 @@ section.portfolio .row div.project {
   margin: 10px;
   display: block;
   overflow: hidden;
+ 
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: gray; 
 }
 
 section.portfolio .row div.project .cover {
@@ -312,6 +328,7 @@ section.portfolio .row div.project .cover {
   color: #FFF;
   transition: var(--transition);
   opacity: 0;
+ 
 }
 
 section.portfolio .row div.project .cover:hover {
@@ -334,6 +351,7 @@ section.portfolio .row div.project .cover p {
   line-height: 16px;
   font-weight: 400;
   font-family: var(--mono-font);
+ 
 }
 
 .project-1 { background-image: url('assets/portfolio/project3.png') }
@@ -357,6 +375,7 @@ section.clients .container {
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
+ 
 }
 
 section.clients .container div {
@@ -409,8 +428,8 @@ section.contact {
   font-size: 18px;
   line-height: 22px;
   font-weight: 400;
-
-  color:black;
+  background-color: black !important; 
+  color:white;
   background-color: var(--secondary-color);
   text-align: center;
 }
@@ -485,7 +504,8 @@ footer a {
   	}
   	section.hero .hero-left {
   		width: 100%;
-  		padding-right: 0;
+      padding-right: 0;
+ 
   	}
 
 	section.hero img {
@@ -532,16 +552,17 @@ footer a {
 }
 
 .portfolio {
-  background-color: #435363;
+   /*background-color: #435363; */
+  background-color: white; 
 }
 
 #projects {
     font-size: 50px;
     text-align: center;
    padding: 40px 23px 15px 23px ; 
-    background-color: #435363; 
+    background-color: white;
     margin-top: 20px; 
-    color: white !important; 
+    color: black !important; 
     font-family:  serif !important; 
    
     
@@ -550,7 +571,14 @@ footer a {
 body {
   margin: 0; 
   padding: 0; 
-  background: #f4f6f8 ; 
+  /*background: #f4f6f8 ; */
+  background: url("assets/portfolio/tree.jpg") no-repeat right center ; 
+ /* background-position: right; */
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
  
 }
 
@@ -564,8 +592,8 @@ position: absolute;
 display: block; 
 width: 20px; 
 height:  20px; 
-border-bottom: 1px solid black; 
-border-right: 1px solid black; 
+border-bottom: 3px solid black; 
+border-right: 3px solid black; 
 transform: rotate(45deg); 
 margin: -10px; 
 animation: animate  infinite; 
