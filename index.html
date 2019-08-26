@@ -8,7 +8,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Primary Meta Tags -->
-	<title>Tony Men Portfolio</title>
+	<title>Tony Men </title>
 	
 	<!-- Assets -->
 	
@@ -17,6 +17,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif:700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -39,7 +40,7 @@
 <section class="hero">
 	<div class="hero-left">
 	
-	<h1>Hello! My name is <strong>Tony Men</strong>, a recent coding bootcamp graduate. My goal is to help start-ups, small businesses, and agencies <i>develop</i> high quality websites to provide exceptional user experiences.</h1> 
+	<h1>Hello! My name is <strong>Tony Men</strong>, a recent coding bootcamp graduate. My goal is to help businesses <i>develop</i> high quality websites to provide exceptional user experiences.</h1> 
 	</div>
 
 <div class = box id = box >
@@ -54,7 +55,7 @@
 
 
 
-<div id='projects' ><b>Past Projects</b></div>
+<div id='projects' >Portfolio</div>
 
 <section class="portfolio">
   
@@ -96,13 +97,28 @@
 </section>
 
 
+<div class="wrapper">
+
+	
+	<div class="word">About Me</div>
+
+	<div class="aboutme"> I am fairly new to coding 
+		but I enjoy developing clean user interfaces as well as learning more about back-end technologies. The coding universe is big and there is always something new and exciting to learn!  When I'm not coding,  you'll find me playing basketball, biking or attempting to play a musical instrument. </div>
+		
+
+</div>
+
+
+
+
+
 
 <section class="contact" vocab="http://schema.org" typeof="CreativeWork">
 	
 	<div class="container">
 		<div>
 	
-			<p style="font-family: 'Roboto'"> &copy; 2019 Do you have a project? Please do not hestiate to contact! </p>
+			<p style="font-family: 'Roboto'"> &#169 2019 Tony Men  </p>
             </p>
 		</div>
     
@@ -119,17 +135,15 @@
 		document.getElementById('box').addEventListener('click', function ()  {
 		window.scrollBy(0,window.innerHeight); 
 		}) 
-	**/	
-	
-	$(document).ready(function() {
-   
-   $('.box').click(function(){
-	   $('html, body').animate({scrollTop:$(document).height()}, 'slow');
-	   return false;
-   });
 
+**/
+
+$(document).ready(function() {
+	$('.box').click(function(){
+    $("html, body").animate({ scrollTop: $(window).height()}, 600);
+    return false;
 });
-
+});
 
 		</script>
 
