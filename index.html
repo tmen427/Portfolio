@@ -26,7 +26,7 @@
 	<nav>
 		
 		<div class="contact-me">
-			<a href="files/Resume.pdf" download="Github_Branching.pdf" class="button" id="resume" title="Download Resume">Resume</a>
+			<a href="files/Resume.pdf" download="Github_Branching.pdf" class="button" id="resume" title="Download Resume"> Resume</a>
 			<a href="https://github.com/tmen427" target="_blank" title="GitHub">Github</a>
 		
 			<a href="mailto:tmac427@gmail.com" title="Contact me through Email"><b>Email</b></a>
@@ -131,21 +131,17 @@
 
 <script>
 
-/**
-		document.getElementById('box').addEventListener('click', function ()  {
-		window.scrollBy(0,window.innerHeight); 
-		}) 
-
-**/
 
 $(document).ready(function() {
-	$('.box').click(function(){
-    $("html, body").animate({ scrollTop: $(window).height()}, 600);
-    return false;
-});
+$(".box").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#projects").offset().top
+    }, 600);
 });
 
-		</script>
+});
+
+</script>
 
 
 </body>
